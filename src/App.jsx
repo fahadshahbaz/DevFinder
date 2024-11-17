@@ -1,10 +1,14 @@
-import './App.css'
+import Navbar from './Components/Navbar'
+import SearchBar from './Components/SearchBar'
+import UserDisplay from './Components/userDisplay'
 
 function App() {
   return (
-    <>
-    <h1 className='text-3xl font-bold'>Project Setup</h1>
-    </>
+    <div className='flex justify-center items-center flex-col mx-auto'>
+    <Navbar />
+    <SearchBar />
+    <UserDisplay />
+    </div>
   )
 }
 
