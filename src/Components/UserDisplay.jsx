@@ -1,7 +1,7 @@
 import React from "react";
 import LocationIcon from "./Icons/LocationIcon";
 import WebsiteIcon from "./Icons/WebsiteIcon";
-import TwitterIcon from "./Icons/Twittericon";
+import TwitterIcon from "./Icons/TwitterIcon";
 import CompanyIcon from "./Icons/CompanyIcon";
 
 const UserDisplay = () => {
