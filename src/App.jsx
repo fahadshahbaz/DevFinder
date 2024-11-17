@@ -1,6 +1,6 @@
-import Navbar from './Components/Navbar'
-import SearchBar from './Components/SearchBar'
-import UserDisplay from './Components/userDisplay'
+import Navbar from "./Components/Navbar"
+import SearchBar from "./Components/SearchBar"
+import UserDisplay from "./Components/UserDisplay"
 
 function App() {
   return (
