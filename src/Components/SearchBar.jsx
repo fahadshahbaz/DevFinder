@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <form className="w-full md:w-[670px] lg:w-[800px] mx-auto px-5 sm:px-12 mt-9">
+    <form className="w-full md:w-[700px] lg:w-[800px] mx-auto px-5 sm:px-12 mt-9">
       <div className="relative shadow-lg">
         <div className="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
           <svg
