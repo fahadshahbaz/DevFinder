@@ -1,6 +1,10 @@
-export { default as SunIcon } from './SunIcon';
-export { default as MoonIcon } from './MoonIcon';
-export { default as LocationIcon } from './LocationIcon'
-export { default as CompanyIcon } from './CompanyIcon';
-export { default as WebsiteIcon } from './WebisteIcon';
-export { default as TwitterIcon } from './TwitterIcon';
+import SunIcon from './SunIcon';
+import MoonIcon from './MoonIcon';
+import LocationIcon from './LocationIcon';
+import CompanyIcon from './CompanyIcon';
+import WebsiteIcon from './WebsiteIcon';
+import TwitterIcon from './TwitterIcon';
+import SearchIcon from './SearchIcon';
+
+export { SunIcon, MoonIcon, LocationIcon, CompanyIcon, WebsiteIcon, TwitterIcon, SearchIcon };
+
