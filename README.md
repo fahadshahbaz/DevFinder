@@ -2,8 +2,6 @@
 
 A sleek, interactive GitHub user search application built with React and Tailwind CSS. Easily search for GitHub users, view their profiles, repositories, followers, and more. Featuring light/dark mode, error handling, and responsive design.  
 
----
-
 ## **🌟 Key Features**  
 - **Search Users:** Enter any GitHub username to retrieve detailed user information.  
 - **Default User:** Initially loads data for "octocat" when the app is first opened.  
@@ -26,8 +24,6 @@ A sleek, interactive GitHub user search application built with React and Tailwin
 
 ## **🎯 Purpose**  
 This project was created as part of a **Frontend Mentor challenge**, aiming to enhance my skills in React, API integration, and UI design with Tailwind CSS. The app allows users to search for any GitHub user and view their profile details while providing an intuitive experience with dark/light theme switching.
-
----
 
 ## **🚀 Getting Started**  
 
@@ -52,7 +48,6 @@ npm run dev
 ```  
 Visit `http://localhost:5173` to view the app in action.
 
----
 
 ## **💻 Live Demo**  
 Check out the live version of the project [here](https://itsdevfinder.vercel.app).  
