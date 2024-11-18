@@ -32,7 +32,7 @@ const UserDisplay = ({ results }) => {
 
   return (
     <section className="w-full md:w-[700px] lg:w-[800px] mx-auto px-5 sm:px-8 my-6">
-      <div className="w-full bg-[#1E2A47] rounded-xl p-5 md:p-12">
+      <div className="w-full bg-[#FEFEFE] dark:bg-[#1E2A47] rounded-xl p-5 md:p-12 shadow-lg">
         {/* First div for image and name */}
         <div className="flex items-center">
           <div>
@@ -65,20 +65,20 @@ const UserDisplay = ({ results }) => {
         <div className="w-full md:w-[82%] md:ml-28 lg:ml-32">
           {/* Second div for bio and stats */}
           <div className="pt-6">
-            <p className="pl-2 text-gray-300">
+            <p className="pl-2 text-gray-500 dark:text-gray-300">
               {results.bio || "This profile has no bio"}
             </p>
-            <div className="bg-[#141D2F] px-3 sm:px-5 py-5 flex justify-between items-center mt-5 rounded-lg shadow-lg">
+            <div className="bg-[#F6F8FF] dark:bg-[#141D2F] px-3 sm:px-5 py-5 flex justify-between items-center mt-5 rounded-lg">
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-sm text-gray-300">Repos</span>
+                <span className="text-sm text-gray-400 dark:text-gray-300">Repos</span>
                 <span className="text-lg font-bold">{results.public_repos}</span>
               </div>
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-sm text-gray-300">Followers</span>
+                <span className="text-smtext-gray-400 dark:text-gray-300">Followers</span>
                 <span className="text-lg font-bold">{results.followers}</span>
               </div>
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-sm text-gray-300">Following</span>
+                <span className="text-smtext-gray-400 dark:text-gray-300">Following</span>
                 <span className="text-lg font-bold">{results.following}</span>
               </div>
             </div>

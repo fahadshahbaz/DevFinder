@@ -17,7 +17,7 @@ const SearchBar = ({ fetchGithubUser }) => {
 
   return (
     <form className="w-full md:w-[700px] lg:w-[800px] mx-auto px-5 sm:px-8 mt-6">
-      <div className="relative shadow-lg">
+      <div className="relative shadow-lg overflow-hidden rounded-md">
         <div className="absolute inset-y-0 start-0 flex items-center ps-2 sm:ps-5 pointer-events-none">
         <SearchIcon />
         </div>
@@ -25,7 +25,7 @@ const SearchBar = ({ fetchGithubUser }) => {
           onChange={(e) => setQuery(e.target.value)}
           value={query}
           type="search"
-          className="block w-full px-4 py-6 ps-10 sm:ps-14 outline-none text-[0.85rem] md:text-base text-gray-900 rounded-xl bg-gray-50 dark:bg-[#1E2A47] placeholder-gray-500 dark:placeholder-white dark:text-white"
+          className="block w-full px-4 py-6 ps-10 sm:ps-14 outline-none text-[0.85rem] md:text-base text-gray-900 rounded-lg bg-[#FEFEFE] dark:bg-[#1E2A47] placeholder-gray-500 dark:placeholder-white dark:text-white"
           placeholder="Search Github username..."
         />
         <button
