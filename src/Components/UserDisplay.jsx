@@ -85,7 +85,7 @@ const UserDisplay = ({ results }) => {
           </div>
 
           {/* Third div for social media */}
-          <div className="flex flex-col sm:flex-row justify-between md:justify-around md:items-center pt-6">
+          <div className="flex flex-col sm:flex-row justify-between px-6 md:items-center pt-6">
             <div className="flex flex-col space-y-3">
               <span className={!results.location ? "opacity-50" : ""}>
                 <LocationIcon />{" "}
