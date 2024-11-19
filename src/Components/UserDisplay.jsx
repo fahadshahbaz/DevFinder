@@ -70,15 +70,23 @@ const UserDisplay = ({ results }) => {
             </p>
             <div className="bg-[#F6F8FF] dark:bg-[#141D2F] px-3 sm:px-5 py-5 flex justify-between items-center mt-5 rounded-lg">
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-sm text-gray-400 dark:text-gray-300">Repos</span>
-                <span className="text-lg font-bold">{results.public_repos}</span>
+                <span className="text-sm text-gray-400 dark:text-gray-300">
+                  Repos
+                </span>
+                <span className="text-lg font-bold">
+                  {results.public_repos}
+                </span>
               </div>
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-smtext-gray-400 dark:text-gray-300">Followers</span>
+                <span className="text-smtext-gray-400 dark:text-gray-300">
+                  Followers
+                </span>
                 <span className="text-lg font-bold">{results.followers}</span>
               </div>
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-smtext-gray-400 dark:text-gray-300">Following</span>
+                <span className="text-smtext-gray-400 dark:text-gray-300">
+                  Following
+                </span>
                 <span className="text-lg font-bold">{results.following}</span>
               </div>
             </div>
@@ -88,18 +96,33 @@ const UserDisplay = ({ results }) => {
           <div className="flex flex-col sm:flex-row justify-between px-6 md:items-center pt-6">
             <div className="flex flex-col space-y-3">
               <span className={!results.location ? "opacity-50" : ""}>
-                <LocationIcon />{" "}
-                {results.location || "Not Available"}
+                <LocationIcon /> {results.location || "Not Available"}
               </span>
               <span className={!results.blog ? "opacity-50" : "pb-3 sm:pb-0"}>
                 <WebsiteIcon /> {formatWebsite(results.blog)}
               </span>
             </div>
             <div className="flex flex-col space-y-3">
-              <span className={!results.twitter_username ? "opacity-50" : ""}>
+              {/* <span className={!results.twitter_username ? "opacity-50" : ""}>
                 <TwitterIcon />{" "}
                 {results.twitter_username || "Not Available"}
+              </span> */}
+              <span className={!results.twitter_username ? "opacity-50" : ""}>
+                <TwitterIcon />{" "}
+                {results.twitter_username ? (
+                  <a
+                    href={`https://twitter.com/${results.twitter_username}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline text-inherit"
+                  >
+                    {results.twitter_username}
+                  </a>
+                ) : (
+                  "Not Available"
+                )}
               </span>
+
               <span className={!results.company ? "opacity-50" : ""}>
                 <CompanyIcon /> {formatCompany(results.company)}
               </span>
